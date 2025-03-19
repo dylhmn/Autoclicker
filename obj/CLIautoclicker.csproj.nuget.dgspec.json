@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\44750\\Downloads\\CLIautoclicker\\CLIautoclicker.csproj": {}
+    "C:\\Users\\44750\\Downloads\\Autoclicker\\CLIautoclicker.csproj": {}
   },
   "projects": {
-    "C:\\Users\\44750\\Downloads\\CLIautoclicker\\CLIautoclicker.csproj": {
+    "C:\\Users\\44750\\Downloads\\Autoclicker\\CLIautoclicker.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\44750\\Downloads\\CLIautoclicker\\CLIautoclicker.csproj",
+        "projectUniqueName": "C:\\Users\\44750\\Downloads\\Autoclicker\\CLIautoclicker.csproj",
         "projectName": "CLIautoclicker",
-        "projectPath": "C:\\Users\\44750\\Downloads\\CLIautoclicker\\CLIautoclicker.csproj",
+        "projectPath": "C:\\Users\\44750\\Downloads\\Autoclicker\\CLIautoclicker.csproj",
         "packagesPath": "C:\\Users\\44750\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\44750\\Downloads\\CLIautoclicker\\obj\\",
+        "outputPath": "C:\\Users\\44750\\Downloads\\Autoclicker\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\44750\\AppData\\Roaming\\NuGet\\NuGet.Config",
