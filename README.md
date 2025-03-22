@@ -1,6 +1,6 @@
 # Autoclicker
 
-This auto clicker is an experiment with hotkey event handling.
+This auto clicker console interface is an experiment with hotkey event handling.
 
 Suitable for gaming and misc applications.
 
