@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CLIautoclicker")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7e13c42c80f4b48f34a9690c657fce98fc8ce5fa")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1a2524b48edd55a84599206a9a9bc54242e8afd3")]
 [assembly: System.Reflection.AssemblyProductAttribute("CLIautoclicker")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CLIautoclicker")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,7 +1,6 @@
 # Autoclicker
 
-This auto clicker console interface is an experiment with hotkey event handling.
+This gaming and misc applications auto clicker console interface is an experiment with hotkey event handling.
 
-Suitable for gaming and misc applications.
+If you would like to change the hotkey (or click interval), documentation has been commented in the code.
 
-IDE: Visual Studio. Note: Build the project and pin it for efficiency
