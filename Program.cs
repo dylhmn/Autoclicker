@@ -8,6 +8,7 @@ static extern short GetAsyncKeyState(int vKey); // Hotkey
 const uint LEFTDOWN = 0x02;
 const uint LEFTUP = 0x04;
 bool enableClicker = false;
+int totalClicks = 0;
 //
 //
 //
@@ -17,18 +18,15 @@ const int HOTKEY = 0x26;
 //  Hotkeys: https://learn.microsoft.com/en-us/windows/win32/inputdev/virtual-key-codes
 //
 string ? HOTKEYname = Enum.GetName(typeof(ConsoleKey), HOTKEY); // Gives the hotkey a name
-
 Console.Title = "AUTOCLICKER";
-Greeting();
-
+consoleTextGreeting();
 while (true) // AUTOCLICKER LOOP
 {
     if (GetAsyncKeyState(HOTKEY) < 0)
     {
-        Console.Clear();
+        //Console.Clear();
         enableClicker = !enableClicker; // Enable / Disable vice versa
-        Console.ForegroundColor = enableClicker ? ConsoleColor.Green : ConsoleColor.Red;
-        Console.WriteLine(enableClicker ? " + ACTIVE" : " - INACTIVE");
+        //consoleTextStatus();
         Thread.Sleep(300); // Stops spam
     }
     if (enableClicker)
@@ -42,8 +40,10 @@ void MouseClick() // MOUSE CLICK FUNCTION
     mouse_event(LEFTDOWN, 0, 0, 0, IntPtr.Zero);
     mouse_event(LEFTUP, 0, 0, 0, IntPtr.Zero);
     // 0,0,0 = no mouse movements
+    totalClicks++;
+    consoleTextStatus();
 }
-void Greeting()
+void consoleTextGreeting()
 {
     Console.Write("WELCOME!\nTHE CURRENT HOTKEY IS: ");
     Console.ForegroundColor = ConsoleColor.Yellow;
@@ -52,4 +52,15 @@ void Greeting()
     Console.Write("\nINTERVAL: ");
     Console.ForegroundColor = ConsoleColor.Yellow;
     Console.Write(clickInterval.ToString());
+}
+
+void consoleTextStatus()
+{
+    Console.Clear();
+    Console.ForegroundColor = enableClicker ? ConsoleColor.Green : ConsoleColor.Red;
+    Console.WriteLine(enableClicker ? " + ACTIVE" : " - INACTIVE");
+    Console.ForegroundColor = ConsoleColor.White;
+    Console.Write("TOTAL CLICKS: ");
+    Console.ForegroundColor = ConsoleColor.Yellow;
+    Console.Write(totalClicks.ToString());
 }
