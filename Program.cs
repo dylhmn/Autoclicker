@@ -16,7 +16,6 @@ int clickInterval = 5;
 const int HOTKEY = 0x75;
 //  Intervals are in miliseconds. 
 //  Hotkeys: https://learn.microsoft.com/en-us/windows/win32/inputdev/virtual-key-codes
-//
 
 string ? HOTKEYname = Enum.GetName(typeof(ConsoleKey), HOTKEY); // Gives the hotkey a name
 Console.Title = "AUTOCLICKER";
